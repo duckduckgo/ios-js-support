@@ -20,6 +20,7 @@ fi
 
 
 webpackcmd=./node_modules/webpack/bin/webpack.js
+babelcmd=./node_modules/.bin/babel
 
 rm -rf build/
 mkdir build/
@@ -37,7 +38,7 @@ cat ../abp-filter-parser/src/abp-filter-parser.js >> build/abp-filter-parser.js
 cp ../abp-filter-parser/src/badFingerprints.js build/
 
 $webpackcmd --config webpack-abp-filter-parser.config-es2015.js
-cat build/abp-filter-parser-packed.js | babel --presets es2015 > src/abp-filter-parser-packed-es2015.js
+cat build/abp-filter-parser-packed.js | $babelcmd --presets es2015 > src/abp-filter-parser-packed-es2015.js
 
-cat src/bloom-filter-packed.js | babel --presets es2015 > src/bloom-filter-packed-es2015.js
+cat src/bloom-filter-packed.js | $babelcmd --presets es2015 > src/bloom-filter-packed-es2015.js
 
