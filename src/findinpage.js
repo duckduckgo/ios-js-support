@@ -84,7 +84,7 @@ function find(query) {
   lastEscapedQuery = escapedQuery;
 
   if (!escapedQuery) {
-    webkit.messageHandlers.log.postMessage({ currentResult: 0, totalResults: 0 });
+    webkit.messageHandlers.findInPageHandler.postMessage({ currentResult: 0, totalResults: 0 });
     return;
   }
 
@@ -104,7 +104,7 @@ function find(query) {
     activeHighlightIndex = -1;
 
     let totalResults = highlights.length;
-    webkit.messageHandlers.log.postMessage({ totalResults: totalResults });
+    webkit.messageHandlers.findInPageHandler.postMessage({ totalResults: totalResults });
 
     findNext();
   });
