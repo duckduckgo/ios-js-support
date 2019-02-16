@@ -33,24 +33,20 @@ const SCROLL_DURATION = 100;
 const HIGHLIGHT_CLASS_NAME = "__firefox__find-highlight";
 const HIGHLIGHT_CLASS_NAME_ACTIVE = "__firefox__find-highlight-active";
 
-const HIGHLIGHT_COLOR = "#ffde49";
-const HIGHLIGHT_COLOR_ACTIVE = "#f19750";
+const HIGHLIGHT_COLOR = "#feff00";
+const HIGHLIGHT_COLOR_ACTIVE = "#feff00";
 
-// IMPORTANT!!!: If this CSS is ever changed, the sha256-base64
-// hash in Client/Frontend/Reader/ReaderModeHandlers.swift will
-// also need updated. The value of `ReaderModeStyleHash` in that
-// file represents the sha256-base64 hash of the `HIGHLIGHT_CSS`.
 const HIGHLIGHT_CSS =
 `.${HIGHLIGHT_CLASS_NAME} {
   color: #000;
   background-color: ${HIGHLIGHT_COLOR};
+  opacity: 0.5;
   border-radius: 1px;
-  box-shadow: 0 0 0 2px ${HIGHLIGHT_COLOR};
   transition: all ${SCROLL_DURATION}ms ease ${SCROLL_DURATION}ms;
 }
 .${HIGHLIGHT_CLASS_NAME}.${HIGHLIGHT_CLASS_NAME_ACTIVE} {
   background-color: ${HIGHLIGHT_COLOR_ACTIVE};
-  box-shadow: 0 0 0 4px ${HIGHLIGHT_COLOR_ACTIVE},0 1px 3px 3px rgba(0,0,0,.75);
+  opacity: 1.0;
 }`;
 
 var lastEscapedQuery = "";
