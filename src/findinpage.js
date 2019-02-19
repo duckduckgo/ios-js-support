@@ -43,6 +43,7 @@ const HIGHLIGHT_CSS =
   opacity: 0.5;
   border-radius: 1px;
   transition: all ${SCROLL_DURATION}ms ease ${SCROLL_DURATION}ms;
+  display: inline;
 }
 .${HIGHLIGHT_CLASS_NAME}.${HIGHLIGHT_CLASS_NAME_ACTIVE} {
   background-color: ${HIGHLIGHT_COLOR_ACTIVE};
@@ -55,7 +56,7 @@ var lastReplacements = null;
 var lastHighlights = null;
 var activeHighlightIndex = -1;
 
-var highlightSpan = document.createElement("span");
+var highlightSpan = document.createElement("div");
 highlightSpan.className = HIGHLIGHT_CLASS_NAME;
 
 var styleElement = document.createElement("style");
