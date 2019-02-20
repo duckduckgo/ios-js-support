@@ -35,10 +35,11 @@ const HIGHLIGHT_CLASS_NAME_ACTIVE = "__firefox__find-highlight-active";
 
 const HIGHLIGHT_COLOR = "#feff00";
 const HIGHLIGHT_COLOR_ACTIVE = "#feff00";
+const HIGHLIGHT_TEXT_COLOR = "#222";
 
 const HIGHLIGHT_CSS =
 `.${HIGHLIGHT_CLASS_NAME} {
-  color: #000;
+  color: ${HIGHLIGHT_TEXT_COLOR};
   background-color: ${HIGHLIGHT_COLOR};
   opacity: 0.5;
   border-radius: 1px;
