@@ -5,6 +5,8 @@
 
 "use strict";
 
+(function() {
+
 if (!window.__firefox__) {
     Object.defineProperty(window, "__firefox__", {
       enumerable: false,
@@ -395,3 +397,5 @@ Object.defineProperty(window.__firefox__, "findDone", {
   writable: false,
   value: findDone
 });
+
+})();
