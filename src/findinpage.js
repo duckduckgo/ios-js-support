@@ -35,8 +35,8 @@ const SCROLL_DURATION = 100;
 const HIGHLIGHT_CLASS_NAME = "__firefox__find-highlight";
 const HIGHLIGHT_CLASS_NAME_ACTIVE = "__firefox__find-highlight-active";
 
-const HIGHLIGHT_COLOR = "#feff00";
-const HIGHLIGHT_COLOR_ACTIVE = "#feff00";
+const HIGHLIGHT_COLOR = "#ffff3a";
+const HIGHLIGHT_COLOR_ACTIVE = "#ff973a";
 const HIGHLIGHT_TEXT_COLOR = "#222";
 
 const HIGHLIGHT_CSS =
