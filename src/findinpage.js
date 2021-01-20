@@ -37,7 +37,8 @@ const HIGHLIGHT_CLASS_NAME_ACTIVE = "__firefox__find-highlight-active";
 
 const HIGHLIGHT_COLOR = "#ffff3a";
 const HIGHLIGHT_COLOR_ACTIVE = "#ff973a";
-const HIGHLIGHT_TEXT_COLOR = "#000";
+const HIGHLIGHT_TEXT_COLOR = "#222";
+const HIGHLIGHT_TEXT_COLOR_ACTIVE = "#000";
 
 const HIGHLIGHT_CSS =
 `.${HIGHLIGHT_CLASS_NAME} {
@@ -50,6 +51,7 @@ const HIGHLIGHT_CSS =
 }
 .${HIGHLIGHT_CLASS_NAME}.${HIGHLIGHT_CLASS_NAME_ACTIVE} {
   background-color: ${HIGHLIGHT_COLOR_ACTIVE};
+  color: ${HIGHLIGHT_TEXT_COLOR_ACTIVE};
   opacity: 1.0;
 }`;
 
