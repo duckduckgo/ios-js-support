@@ -38,13 +38,13 @@ const HIGHLIGHT_CLASS_NAME_ACTIVE = "__firefox__find-highlight-active";
 const HIGHLIGHT_COLOR = "#ffff3a";
 const HIGHLIGHT_COLOR_ACTIVE = "#ff973a";
 const HIGHLIGHT_TEXT_COLOR = "#222";
-const HIGHLIGHT_TEXT_COLOR_ACTIVE = "#000";
+const HIGHLIGHT_TEXT_COLOR_ACTIVE = "#222";
 
 const HIGHLIGHT_CSS =
 `.${HIGHLIGHT_CLASS_NAME} {
   color: ${HIGHLIGHT_TEXT_COLOR};
   background-color: ${HIGHLIGHT_COLOR};
-  opacity: 0.5;
+  opacity: 1.0;
   border-radius: 1px;
   transition: all ${SCROLL_DURATION}ms ease ${SCROLL_DURATION}ms;
   display: inline;
