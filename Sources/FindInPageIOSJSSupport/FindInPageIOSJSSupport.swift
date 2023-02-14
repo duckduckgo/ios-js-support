@@ -1,5 +1,6 @@
 import Foundation
 
 public struct FindInPageIOSJSSupport {
-    public static var Bundle: Bundle = .module
+    public static var bundle: Bundle = .module
 }
+
